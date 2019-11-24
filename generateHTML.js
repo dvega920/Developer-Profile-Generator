@@ -208,7 +208,7 @@ function generateHTML(data, response) {
 
         @media print {
             body {
-                zoom: .75;
+                zoom: .50;
             }
         }
     </style>
