@@ -1,0 +1,25 @@
+{
+  "name": "developer-profile-generator",
+  "version": "1.0.0",
+  "description": "dynamically creates html page of github user profile  and converts to pdf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvega920/Developer-Profile-Generator.git"
+  },
+  "author": "David Vega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dvega920/Developer-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/dvega920/Developer-Profile-Generator#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "html-pdf": "^2.2.0",
+    "inquirer": "^7.0.0",
+    "open": "^7.0.0"
+  }
+}
