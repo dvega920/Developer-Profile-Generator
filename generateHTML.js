@@ -256,7 +256,7 @@ function generateHTML(data, response) {
                     <div class="col">
                         <div class="card">
                             <div class="card-body">
-                            <h4>GitHub Stars <p>${response.data.followers}</p></h4>
+                            <h4>GitHub Stars <p>0</p></h4> <!--Could not figure out how to get GitHub Stars data-->
                             </div>
                         </div>
                     </div>
