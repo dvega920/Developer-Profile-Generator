@@ -38,12 +38,9 @@ promptUser()
     .then(function () {
         console.log("Successfully wrote to index.html");
         let convert = fs.readFileSync("./index.html", "utf-8");
-        let options = { format: Letter };
-    })
-    .then(function () {
+        let options = { format: "Letter" };
         pdf.create(convert, options).toFile("index.pdf", (err, res) => {
             open("index.pdf");
-
             if (err)
                 return reject(err)
             return resolve(res)
