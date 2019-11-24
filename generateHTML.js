@@ -34,7 +34,7 @@ function generateHTML(data, response) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=BioRhyme|Cabin&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+    <script src="https://kit.fontawesome.com/cb45d866e1.js" crossorigin="anonymous"></script>
 
     <title>GitHub Profile</title>
     <style>
@@ -145,6 +145,14 @@ function generateHTML(data, response) {
             margin-top: 10px;
         }
 
+        .fas {
+            padding-right: 8px;
+        }
+
+        .fab {
+            padding-right: 8px;
+        }
+
         .links-nav {
             width: 100%;
             text-align: center;
@@ -216,13 +224,13 @@ function generateHTML(data, response) {
                     <h2> I am currently attending UNH Coding Bootcamp</h2>
                     <ul class="nav links-nav justify-content-center">
                         <li class="nav-item nav-link">
-                            <a class="nav-link active" href="https://google.com/maps/place/${response.data.location}" target="_blank">${response.data.location}</a>
+                            <a class="nav-link active" href="https://google.com/maps/place/${response.data.location}" target="_blank"><i class="fas fa-map-marker-alt"></i>${response.data.location}</a>
                         </li>
                         <li class="nav-item nav-link">
-                            <a class="nav-link" href="${response.data.html_url}">GitHub</a>
+                            <a class="nav-link" href="${response.data.html_url}" target="_blank"><i class="fab fa-github"></i>GitHub</a>
                         </li>
                         <li class="nav-item nav-link">
-                            <a class="nav-link" href="${response.data.blog}">Blog</a>
+                            <a class="nav-link" href="${response.data.blog}" target="_blank"><i class="fas fa-blog"></i>Blog</a>
                         </li>
                     </ul>
                 </div>
